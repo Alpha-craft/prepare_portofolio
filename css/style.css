@@ -17,7 +17,7 @@
 
 @media (min-width: 768px) {
     .col {
-        width: 75%;
+        /* width: 100%; */
         display: grid;
     }
 }
