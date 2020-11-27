@@ -51,13 +51,24 @@
             <div class="col-sm-3 col-md-3">Hemlo</div>
         </div>
         <div class="rows">
-            <div class="col-sm-3 col-md-12">
+            <div class="col-sm-8 col-md-12">
+                <p>Tanggal: <span id="hari"></span></p>
+                <p>Bulan: <span id="bulan"></span></p>
                 <div class="kotak">
                     <p>
-                        <span class="jam"><span id="jam"></span><span>:</span><span id="menit"></span><span>:</span><span id="detik"></span> </span>
+                        <!-- <span id="waktu"></span> -->
+                        <span id="jam"></span> <span>:</span><span id="menit"></span><span>:</span><span id="detik"></span>
                     </p>
                 </div>
             </div>
+        </div>
+        <p id="change">Ini adalah tulisan yang bila tombol dibawah di click akan berubah</p>
+        <div class="row">
+
+            <button class=" col-sm-3 col-md-3 " onclick="ganti()"> Ganti warna </button>
+            <button class=" col-sm-3 col-md-6" onclick="muncul()">Tampilkan </button>
+            <button class=" col-sm-3 col-md-3" onclick="hilang()">Sembunyikan </button>
+
         </div>
     </div>
 </body>

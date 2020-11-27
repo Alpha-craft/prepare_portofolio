@@ -3,7 +3,7 @@
 }
 
 .container {
-    background-color: #7579e7;
+    background-color: greenyellow;
 }
 
 .kotak {
@@ -15,8 +15,8 @@
     display: flex;
     flex: 1;
     align-items: flex-start;
-    /* justify-content: center; */
-    /* text-align: center; */
+    justify-content: center;
+    text-align: center;
 }
 
 .jam {

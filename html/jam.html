@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body,
+        html {
+            height: 100%;
+            background: #131419;
+        }
+        
+        body {
+            display: grid;
+            place-items: center;
+        }
+        
+        .jam {
+            background: #131419;
+            height: 120px;
+            width: 500px;
+            text-align: center;
+            padding: 25px;
+            box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.05), 3px 3px -px rgba(0, 0, 0, 0.5);
+        }
+        
+        .jam .tampilan {
+            font-size: 60px;
+            color: cyan;
+            letter-spacing: 5px;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(255, 255, 255, 0.4));
+        }
+    </style>
+    <title>Ini jam</title>
+</head>
+
+<body>
+    <div class="jam">
+        <div class="tampilan"></div>
+    </div>
+    <script>
+        setInterval(waktu, 1000);
+
+        function waktu() {
+            const jam = document.querySelector(".tampilan")
+            let time = new Date();
+            /*jam.textContent = time;*/
+            let detik = time.getSeconds();
+            let min = time.getMinutes();
+            let hr = time.getHours();
+            let yr = time.getUTCFullYear();
+            let bulan = time.getUTCMonth();
+            let tanggal = time.getUTCDate();
+            if (detik < 10) {
+                detik = '0' + detik
+            }
+            if (min < 10) {
+                min = '0' + min
+            }
+            if (hr < 10) {
+                hr = '0' + hr
+            }
+            if (bulan < 10) {
+                bulan = '0' + bulan
+            }
+            if (tanggal < 10) {
+                tanggal = '0' + tanggal
+            }
+            /*alert(hr + "hr" + min +"min" +sec + "sec");*/
+            jam.textContent = yr + "\n" + hr + ":" + min + ":" + detik + "\n";
+
+        }
+    </script>
+</body>
+
+</html>
