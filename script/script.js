@@ -78,7 +78,7 @@ const kawaii = [{
 ]
 console.log(kawaii.length);
 console.log(kawaii);
-console.log(kawaii[Math.floor(Math.random() * kawaii.length)].nama_file)
+console.log(kawaii[Math.floor(Math.random() * (kawaii.length) - 1)].nama_file)
 
 function show_image(width, height) {
     let img = document.createElement("img");
