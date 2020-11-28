@@ -29,7 +29,6 @@ function waktu() {
     menit.innerHTML = minute;
     hari.innerHTML = day;
     bulan.innerHTML = dbulan[index_bulan]
-    console.log(index_bulan)
         // jam.textcontent = hour + ':' + minute + ':' + seconds;
 
 }
@@ -76,6 +75,8 @@ const kawaii = [{
         "name_file": "28.png"
     }
 ]
+const boost_mood = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+
 console.log(kawaii.length);
 console.log(kawaii);
 console.log(kawaii[Math.floor(Math.random() * (kawaii.length) - 1)].nama_file)
@@ -105,3 +106,21 @@ function randomquote() {
     kata.innerHTML = random_quote.Quote;
     sumber.innerHTML = random_quote.Sauce;
 }
+
+
+// let hasil1 = document.getElementById('tinggi').innerHTML = tinggi;
+// let hasil = document.getElementById('lebar').innerHTML = lebar;
+
+function client_info() {
+    let tinggi = document.body.clientHeight;
+    let lebar = document.body.clientWidth;
+    let screen_height = screen.height;
+    let screen_width = screen.width;
+    document.getElementById('tinggi').innerHTML = tinggi;
+    document.getElementById('lebar').innerHTML = lebar;
+    document.getElementById('screenH').innerHTML = screen_height;
+    document.getElementById('screenW').innerHTML = screen_width;
+}
+
+// console.log(hasil)
+// console.log(hasil1)
