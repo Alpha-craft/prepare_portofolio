@@ -66,20 +66,21 @@ const kawaii = [{
         "nama_file": "30.png"
     },
     {
+        "nama_file": "28.png"
+    },
+    {
         "nama_file": "31.jpg"
     },
     {
         "nama_file": "32.jpg"
-    },
-    {
-        "name_file": "28.png"
     }
+
 ]
 const boost_mood = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
 
 console.log(kawaii.length);
 console.log(kawaii);
-console.log(kawaii[Math.floor(Math.random() * (kawaii.length) - 1)].nama_file)
+console.log(kawaii[Math.floor(Math.random() * kawaii.length) - 1].nama_file)
 
 function show_image() {
     let img = document.createElement("img");
@@ -124,3 +125,10 @@ function client_info() {
 
 // console.log(hasil)
 // console.log(hasil1)
+function forward() {
+    window.history.forward();
+}
+
+function back() {
+    window.history.back();
+}
