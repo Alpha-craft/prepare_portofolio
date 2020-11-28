@@ -80,11 +80,12 @@ console.log(kawaii.length);
 console.log(kawaii);
 console.log(kawaii[Math.floor(Math.random() * kawaii.length)].nama_file)
 
-function show_image() {
+function show_image(width, height) {
     let img = document.createElement("img");
     img.src = "../pict/" + kawaii[Math.floor(Math.random() * kawaii.length)].nama_file;
-    // img.width = width;
-    // img.height = height;
+    img.width = img.style.width = '100%';
+    img.width = img.style.maxWidth = '450';
+    img.height = img.style.height = 'auto';
     // img.alt = alt;
 
     // This next line will just add it to the <body> tag
