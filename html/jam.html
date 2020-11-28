@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="../script/script.js"></script> -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
         * {
@@ -50,6 +51,7 @@
     <div class="jam">
         <div class="tampilan"></div>
     </div>
+    <button onclick="back()">Kembali</button>
     <script>
         setInterval(waktu, 1000);
 
@@ -81,6 +83,14 @@
             /*alert(hr + "hr" + min +"min" +sec + "sec");*/
             jam.textContent = yr + "\n" + hr + ":" + min + ":" + detik + "\n";
 
+        }
+
+        function forward() {
+            window.history.forward();
+        }
+
+        function back() {
+            window.history.back();
         }
     </script>
 </body>
