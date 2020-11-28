@@ -22,3 +22,12 @@
 .jam {
     align-self: center;
 }
+
+.quotes {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.sauce {
+    text-align: center;
+}

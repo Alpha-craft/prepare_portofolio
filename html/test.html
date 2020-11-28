@@ -44,6 +44,10 @@
         <p>Only when the button is clicked, the navigation bar will be displayed.</p>
         <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
 
+        <div class="quotes">
+            <p>" <span id="quote"></span> "</p>
+            <p class="sauce"> ~<span id="sauce"></span> </p>
+        </div>
 
         <div class="row">
             <div class="col-sm-3 col-md-3 ">Hemlo</div>
@@ -68,7 +72,11 @@
             <button class=" col-sm-3 col-md-3 " onclick="ganti()"> Ganti warna </button>
             <button class=" col-sm-3 col-md-6" onclick="muncul()">Tampilkan </button>
             <button class=" col-sm-3 col-md-3" onclick="hilang()">Sembunyikan </button>
+            <button onclick="show_image('250px','200px')">lihat gambar</button>
 
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6" id="gambar"></div>
         </div>
     </div>
 </body>

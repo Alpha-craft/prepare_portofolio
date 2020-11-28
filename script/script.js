@@ -47,4 +47,60 @@ function muncul() {
 
 function hilang() {
     change.style.visibility = 'hidden';
+
+}
+const quotes = [{
+            "Quote": "Bila kau tak Tahan lelahnya belajar,maka kau harus tahan menanggung perihnya kebodohan",
+            "Sauce": "Imam Syafi'i"
+        },
+        {
+            "Quote": "Merendahkan Orang lain tidak membuat dirimu terlihat lebih tinggi dan mulia daripada orang yang kau rendahkan itu",
+            "Sauce": "Rahman"
+        }
+    ]
+    // untuk mengakses value dalam array asscociation memamakai
+    // nama_array[index].key
+const kawaii = [{
+        "nama_file": "29.jpg"
+    },
+    {
+        "nama_file": "30.png"
+    },
+    {
+        "nama_file": "31.jpg"
+    },
+    {
+        "nama_file": "32.jpg"
+    },
+    {
+        "name_file": "28.png"
+    }
+]
+console.log(kawaii.length);
+console.log(kawaii);
+console.log(kawaii[Math.floor(Math.random() * kawaii.length)].nama_file)
+
+function show_image() {
+    let img = document.createElement("img");
+    img.src = "../pict/" + kawaii[Math.floor(Math.random() * kawaii.length)].nama_file;
+    // img.width = width;
+    // img.height = height;
+    // img.alt = alt;
+
+    // This next line will just add it to the <body> tag
+    // document.body.appendChild(img);
+    document.getElementById('gambar').appendChild(img);
+
+}
+
+
+
+setInterval(randomquote, 4000);
+
+function randomquote() {
+    let random_quote = quotes[Math.floor(Math.random() * quotes.length)]
+    let kata = document.getElementById('quote');
+    let sumber = document.getElementById('sauce')
+    kata.innerHTML = random_quote.Quote;
+    sumber.innerHTML = random_quote.Sauce;
 }
