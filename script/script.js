@@ -133,3 +133,7 @@ function forward() {
 function back() {
     window.history.back();
 }
+
+$.getJSON('http://ipinfo.io', function(data) {
+    console.log(data);
+});
