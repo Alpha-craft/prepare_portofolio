@@ -84,23 +84,6 @@ console.log(kawaii);
 console.log(kawaii[Math.floor(Math.random() * kawaii.length) - 1].nama_file)
 
 function show_image() {
-    const kawaii = [{
-            "nama_file": "29.jpg"
-        },
-        {
-            "nama_file": "30.png"
-        },
-        {
-            "nama_file": "28.png"
-        },
-        {
-            "nama_file": "31.jpg"
-        },
-        {
-            "nama_file": "32.jpg"
-        }
-
-    ]
     let img = document.createElement("img");
     img.src = "../pict/" + kawaii[Math.floor(Math.random() * (kawaii.length) - 1)].nama_file;
     img.width = img.style.width = '100%';
