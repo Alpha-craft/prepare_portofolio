@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
 <body>
@@ -72,7 +73,7 @@
             <button class=" col-sm-3 col-md-3 " onclick="ganti()"> Ganti warna </button>
             <button class=" col-sm-3 col-md-3" onclick="muncul()">Tampilkan </button>
             <button class=" col-sm-3 col-md-3" onclick="hilang()">Sembunyikan </button>
-            <button class="col-sm-3 col-md-3" onclick="show_image();this.innerHTML = 'tambah lagi'">lihat gambar</button>
+            <button class="col-sm-3 col-md-3" onclick="show_image();this.innerHTML = 'tambah lagi';tertambahkan()">lihat gambar</button>
 
         </div>
         <div class="row">
@@ -94,6 +95,17 @@
             <button class="col-sm-6" onclick="forward()">ke halaman sebelumnya</button>
         </div>
     </div>
+    <script>
+        function tertambahkan() {
+            Swal.fire({
+                position: 'top-start',
+                icon: 'success',
+                title: 'Gambar Telah Ditambahkan',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+    </script>
 </body>
 
 </html>

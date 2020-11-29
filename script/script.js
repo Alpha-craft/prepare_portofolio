@@ -1,3 +1,4 @@
+// const Swal = require('sweetalert2')
 window.setInterval('waktu()', 1000)
 
 function waktu() {
@@ -60,29 +61,46 @@ const quotes = [{
     // untuk mengakses value dalam array asscociation memamakai
     // nama_array[index].key
 const kawaii = [{
-        "nama_file": "29.jpg"
-    },
-    {
-        "nama_file": "30.png"
-    },
-    {
-        "nama_file": "28.png"
-    },
-    {
-        "nama_file": "31.jpg"
-    },
-    {
-        "nama_file": "32.jpg"
-    }
+            "nama_file": "29.jpg"
+        },
+        {
+            "nama_file": "30.png"
+        },
+        {
+            "nama_file": "28.png"
+        },
+        {
+            "nama_file": "31.jpg"
+        },
+        {
+            "nama_file": "32.jpg"
+        }
 
-]
-const boost_mood = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+    ]
+    // const boost_mood = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
 
 console.log(kawaii.length);
 console.log(kawaii);
 console.log(kawaii[Math.floor(Math.random() * kawaii.length) - 1].nama_file)
 
 function show_image() {
+    const kawaii = [{
+            "nama_file": "29.jpg"
+        },
+        {
+            "nama_file": "30.png"
+        },
+        {
+            "nama_file": "28.png"
+        },
+        {
+            "nama_file": "31.jpg"
+        },
+        {
+            "nama_file": "32.jpg"
+        }
+
+    ]
     let img = document.createElement("img");
     img.src = "../pict/" + kawaii[Math.floor(Math.random() * (kawaii.length) - 1)].nama_file;
     img.width = img.style.width = '100%';
