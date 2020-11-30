@@ -83,6 +83,10 @@ console.log(kawaii.length);
 console.log(kawaii);
 console.log(kawaii[Math.floor(Math.random() * kawaii.length) - 1].nama_file)
 
+let img = document.createElement("img");
+
+
+
 function show_image() {
     let img = document.createElement("img");
     img.src = "../pict/" + kawaii[Math.floor(Math.random() * (kawaii.length) - 1)].nama_file;
@@ -97,7 +101,15 @@ function show_image() {
 
 }
 
+function gamti() {
+    document.getElementById('gamti').innerHTML = "Tambah lagi";
+}
 
+function tukang_trigger() {
+    let img = document.createElement("img");
+    img.addEventListener('click', show_image());
+    img.addEventListener('click', gamti());
+}
 
 setInterval(randomquote, 4000);
 
