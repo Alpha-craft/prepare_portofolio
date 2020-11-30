@@ -89,7 +89,7 @@ let img = document.createElement("img");
 
 function show_image() {
     let img = document.createElement("img");
-    img.src = "../pict/" + kawaii[Math.floor(Math.random() * (kawaii.length) - 1)].nama_file;
+    img.src = "pict/" + kawaii[Math.floor(Math.random() * (kawaii.length) - 1)].nama_file;
     img.width = img.style.width = '100%';
     img.width = img.style.maxWidth = '450';
     img.height = img.style.height = 'auto';
