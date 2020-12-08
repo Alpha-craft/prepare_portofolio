@@ -1,5 +1,7 @@
 // const Swal = require('sweetalert2')
 window.setInterval('waktu()', 1000)
+let time = new Date();
+let hour = time.getHours();
 
 function waktu() {
     let waktu = new Date();
@@ -145,7 +147,25 @@ function forward() {
 function back() {
     window.history.back();
 }
+let greeting = document.getElementById('greeting')
+if (hour > 6 && hour < 9) {
+    greeting.innerHTML = "Selamat Pagi \nSemoga Hari ini Menjadi Yang berkah dan bermanfaat"
+} else if (hour > 9 && hour < 12) {
+    greeting.innerHTML = "Sudah Sarapan?"
+} else if (hour > 12 && hour < 13) {
+    greeting.innerHTML = "Selamat Siang"
+} else if (hour > 13 && hour < 16) {
+    greeting.innerHTML = "Kuharap kau Sudah menyempatkan dirimu untuk beristirahat dan makan siang"
+} else if (hour > 16 && hour < 18) {
+    greeting.innerHTML = "Selamat Sore"
+} else if (hour < 18 && hour > 22) {
+    greeting.innerHTML = "Sudah saatnya Istirahat"
+} else if (hour < 23 && hour > 24) {
+    greeting.innerHTML = "Masih belum Tidur?\nKuharap kamu segera tidur untuk hari besar besok"
+} else if (hour > 24 && hour < 4) {
+    greeting.innerHTML = "Kuharap Kau tidur dengan nyenyak"
 
+}
 $.getJSON('http://ipinfo.io', function(data) {
     console.log(data);
 });
