@@ -1,101 +1,44 @@
-/* // Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-// Small devices (landscape phones, 576px and up) */
-
-* {
-    box-sizing: border-box;
+body {
+    background: #496075;
+    color: azure;
 }
 
-@media (min-width: 576px) {
-    .col {
-        position: relative;
-    }
+.las {
+    color: #ffffff;
 }
 
-
-/* // Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {
-    .col {
-        /* width: 100%; */
-        display: grid;
-    }
-}
-
-
-/* // Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {
-    ...
-}
-
-
-/* // Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {
-    ...
-}
-
-ul {
-    background-color: #7579e7;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-    display: inline;
-    /* float: left; */
-}
-
-li a {
+.tengah {
     text-align: center;
-    text-decoration: none;
+    margin: auto;
     display: block;
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: #9ab3f5;
 }
 
-
-/* a {
-    display: block;
-    padding: 8px;
-    background-color: #b9fffc;
-} */
-
-a:hover {
-    /* background-color: #f8bd7f; */
-    background-color: #7579e7;
-    /* color: ; */
+.tengah img {
+    border-radius: 50%;
 }
 
-ul li .active {
-    float: right !important;
-    background-color: #2ec1ac;
+.jarak {
+    margin: 2rem;
 }
 
-.background {
-    background-image: url(../pict/29.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+.card {
+    background: #496075;
+    color: #496075 !important;
+    box-shadow: 0 0 40px rgba(51, 51, 51, 0.5);
 }
 
-.brand {
-    background-color: #28df99;
+.card-text:hover {
+    transform: translateY(-15px);
+    transition: all 0.6s ease-in-out;
+    color: #ffffff;
 }
 
-.brand:hover {
-    background-color: #7579e7;
+.la-github {
+    color: azure;
+    font-size: 4rem;
 }
 
-.resize {
-    border: 2px solid black;
-    resize: both;
-    overflow: auto;
+.la-telegram {
+    color: azure;
+    font-size: 4rem;
 }

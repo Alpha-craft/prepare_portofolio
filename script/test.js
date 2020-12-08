@@ -3,7 +3,7 @@ let paragraf = document.getElementsByClassName('paragraf'); //selector
 let button = document.getElementById('button')
     //select element pada html berdasarkan ID
 let i = 0;
-let bg_color, color
+let bg_color, color, func
 
 bg_color = document.getElementById('bg-color')
 color = document.getElementById('color')
@@ -21,5 +21,9 @@ function hampus() {
 }
 // paragraf[0].style.color = "red";
 // paragraf[2].style.color = "green";
-console.log("warna background" + bg_color.value)
-console.log("warna font" + color.value)
+func = () => {
+    console.log("warna background" + bg_color.value);
+    console.log("warna font" + color.value);
+
+}
+func();

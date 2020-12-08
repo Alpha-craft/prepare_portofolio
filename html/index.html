@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tems</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/test.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Alpha-craft</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="jam.html">Go to Digital-Clock</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container">
+
+        <h2>Toggleable Tabs</h2>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <h3>HOME</h3>
+                <h1 class="tengah"><span id="greeting"></span></h1>
+
+                <div class="quotes">
+                    <p>" <span id="quote"></span> "</p>
+                    <p class="sauce"> ~<span id="sauce"></span> </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3 col-md-3 ">Hemlo</div>
+                    <div class="col-sm-6 col-md-6 ">Hemlo</div>
+                    <div class="col-sm-3 col-md-3">Hemlo</div>
+                </div>
+                <div class="rows">
+                    <div class="col-sm-8 col-md-12">
+                        <p>Tanggal: <span id="hari"></span></p>
+                        <p>Bulan: <span id="bulan"></span></p>
+                        <div class="kotak">
+                            <p>
+                                <!-- <span id="waktu"></span> -->
+                                <span id="jam"></span> <span>:</span><span id="menit"></span><span>:</span><span id="detik"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p id="change">Ini adalah tulisan yang bila tombol dibawah di click akan berubah</p>
+                <div class="row">
+                    <button class="btn btn-primary col-sm-3 col-md-3 " onclick="ganti()"> Ganti warna </button>
+                    <button class="btn btn-primary col-sm-3 col-md-3" onclick="muncul()">Tampilkan </button>
+                    <button class="btn btn-primary col-sm-3 col-md-3" onclick="hilang()">Sembunyikan </button>
+                    <button class="btn btn-primary col-sm-3 col-md-3" id="gamti" onclick="tukang_trigger();tertambahkan()">lihat gambar</button>
+
+                </div>
+                <div class="row">
+                    <button class="btn col-sm-12" onclick="client_info()">Show client Info Device</button>
+                    <p class="col-sm-12">Device client:</p>
+                    <p class="col-sm-6">Height:<span id="tinggi"></span>px</p>
+                    <p class="col-sm-6">Width:<span id="lebar"></span>px</p>
+                </div>
+                <div class="row">
+                    <p class="col-sm-6">Screen Height: <span id="screenH"></span>px </p>
+                    <p class="col-sm-6">Screen Width: <span id="screenW"></span>px </p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 ">
+                        <p style="width: 100%; height:100%;" id="gambar"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="col-sm-6" onclick="forward()">ke halaman sebelumnya</button>
+                </div>
+
+            </div>
+            <div id="menu1" class="container tab-pane fade"><br>
+                <h3>Menu 1</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="menu2" class="container tab-pane fade"><br>
+                <h3>Menu 2</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="../script/script.js"></script>
+    <script>
+        function tertambahkan() {
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Gambar Telah Ditambahkan',
+                showConfirmButton: false,
+                timer: 1200
+            })
+        }
+    </script>
+</body>
+
+</html>
