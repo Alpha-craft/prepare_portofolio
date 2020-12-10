@@ -1,3 +1,5 @@
+import swal from 'sweetalert';
+
 let paragraf = document.getElementsByClassName('paragraf'); //selector
 // men-select atau memilih element pada html berdasarkan nama kelas
 let button = document.getElementById('button')
@@ -27,3 +29,12 @@ func = () => {
 
 }
 func();
+let muncul = document.getElementById('muncul')
+let pemicu = document.getElementById('pemicu')
+chnage_background_img = () => {
+    document.body.style.background = "url(../pict/bgImg.jpg)"
+    document.body.style.backgroundRepeat = "norepeat"
+    document.body.style.backgroundSize = "cover"
+    document.body.style.color = "azure"
+}
+pemicu.addEventListener('click', chnage_background_img)

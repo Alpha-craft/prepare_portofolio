@@ -76,7 +76,40 @@ const kawaii = [{
         },
         {
             "nama_file": "32.jpg"
-        }
+        },
+        {
+            "nama_file": "1.jpg"
+        },
+        {
+            "nama_file": "2.jpg"
+        },
+        {
+            "nama_file": "3.jpg"
+        },
+        {
+            "nama_file": "4.jpg"
+        },
+        {
+            "nama_file": "4.jpg"
+        },
+        {
+            "nama_file": "6.jpg"
+        },
+        {
+            "nama_file": "7.jpg"
+        },
+        {
+            "nama_file": "8.jpg"
+        },
+        {
+            "nama_file": "9.jpg"
+        },
+        {
+            "nama_file": "10.jpg"
+        },
+        {
+            "nama_file": "11.gif"
+        },
 
     ]
     // const boost_mood = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
@@ -91,7 +124,7 @@ let img = document.createElement("img");
 
 function show_image() {
     let img = document.createElement("img");
-    img.src = "../pict/" + kawaii[Math.floor(Math.random() * (kawaii.length) - 1)].nama_file;
+    img.src = "pict/" + kawaii[Math.floor(Math.random() * (kawaii.length) - 1)].nama_file;
     img.width = img.style.width = '100%';
     img.width = img.style.maxWidth = '450';
     img.height = img.style.height = 'auto';
